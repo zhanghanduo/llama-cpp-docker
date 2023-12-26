@@ -14,6 +14,11 @@ llama-13b:
 		&& curl -LO https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf \
 		&& echo "ef36e090240040f97325758c1ad8e23f3801466a8eece3a9eac2d22d942f548a  llama-2-13b-chat.Q5_K_M.gguf" | sha256sum -c -
 
+mistral-7b-m:
+	cd models \
+		&& curl -LO https://huggingface.co/TheBloke/bun_mistral_7b_v2-GGUF/blob/main/bun_mistral_7b_v2.Q4_K_M.gguf \
+		&& echo "b85cdd596ddd76f3194047b9108a73c74d77ba04bef49255a50fc0cfbda83d32  mistral-7b-instruct-v0.2.Q5_K_M.gguf" | sha256sum -c -
+
 mistral-7b:
 	cd models \
 		&& curl -LO https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q5_K_M.gguf \
